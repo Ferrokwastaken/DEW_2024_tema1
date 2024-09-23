@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 sobre fechas</title>
+</head>
+<body>
+    <h1 id="date">Ejercicio 1 sobre fechas</h1>
+    <script>
+        let now = new Date();
+        let dateString = new Intl.DateTimeFormat("es-ES", {
+            dateStyle:"full",
+            timeStyle:"full"
+        }).format(now);
+        document.getElementById('date').textContent=dateString;
+    </script>
+</body>
+</html>
